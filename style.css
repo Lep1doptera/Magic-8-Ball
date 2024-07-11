@@ -42,7 +42,7 @@ input {
 button {
   position: absolute;
   top: 75vh;
-  padding: 10px 80px;
+  padding: 10px 30px;
   font-size: 20px;
   border-radius: 30px;
   background-color: rgb(96, 223, 96);
@@ -61,7 +61,8 @@ button:active {
   color: rgb(12, 12, 12);
   border-radius: 50%;
   text-align: center;
-  font-size: 100px;
+  font-size: calc(0.7vw + 1vh);
+  align-items: center;
   justify-content: center;
   display: flex;
 }
