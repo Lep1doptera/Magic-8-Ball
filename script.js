@@ -22,6 +22,11 @@ function getAnswer() {
   return prediction;
 }
 
+//Googled to execute function on pressing enter key - addEventListener for enter key - without querySelector - could setRseponseText go inside?
+//include if field is empty - make errorMessage.innerText = "There was no question"
+//document.addEventListener('keypress', function (e) {}
+
 function setResponseText() {
   document.getElementById("response").innerHTML = getAnswer();
+  //do I addEventListener here with if statement - if on click/enter event, display text to trigger to reanimate
 }
