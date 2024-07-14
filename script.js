@@ -35,15 +35,25 @@ document.addEventListener("keypress", function (event) {
       console.log("Write something");
     }
   }
-
 });
 
-
-
 function setResponseText() {
-  document.getElementById("response").innerHTML = getAnswer();
-  //Instruct to reanimate 
-}
+  const responseText = document.getElementById("response");
+  responseText.innerHTML = getAnswer();
+  //Timeout Reanimate block
+  //responseText.classList.remove("animate");
+  //setTimeout(function () {
+  //  responseText.classList.add("animate");
+  //});
+  //console.log("setresponse return")
 
+  //Reflow animation block
+  //responseText.classList.remove("animate");
+  //void responseText.offsetWidth;
+  //responseText.classList.add("animate");
+
+  const cloneResponseText = responseText.cloneNode(true);
+  responseText.parentNode.replaceChild(cloneResponseText, responseText);
+}
 
 // error is not returned when button is clicked, only enter event
