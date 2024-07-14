@@ -33,6 +33,7 @@ document.addEventListener("keypress", function (event) {
       setResponseText();
     } else {
       console.log("Write something");
+      alert("You havent written your question");
     }
   }
 });
